@@ -3,41 +3,41 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.form {
-    color: #1A1C20;
+.form__pages {
     background-color: #FE8262;
-    margin: 4rem 12rem;
-    border-radius: 50px;
+    display: flex;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
 }
 
-.form__nilai {
-    display: flex;
+.form__pages-background {
     background-color: #FFF;
     padding: 2rem;
+    border-radius: 50px;
+    margin: 3rem 12rem;
+    display: flex;
 }
 
-.form__nilai-left {
-    background-color: #FFFFFF;
-    padding: 5px;
+.form__pages-left {
     display: flex;
+    flex-direction: column;
     padding: 2rem;
     border-radius: 1rem;
     align-items: center;
+    place-items: center;
 }
 
-.form__nilai-top {
-    font-family: "Poppins";
+.form__pages-top {
+    margin-bottom: 2.5rem;
     font-size: 2rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    font-weight: bold;
 }
 
 .form__input-field {
-    padding: 0.8rem;
+    padding: 0.5rem;
     border: none;
     text-decoration: none;
-    margin: 0.8rem 0;
+    margin: 0.5rem 0;
     background-color: transparent;
     color: #39311d;
     width: 100%;
@@ -45,7 +45,7 @@
 }
 
 .form__button {
-    background-color: #141211; /* Green */
+    background-color: #141211;
     border: 2px solid #141211;
     color: white;
     padding: 0.5rem 2rem;
@@ -58,29 +58,7 @@
 }
 
 .form__button:hover {
-    background-color: #FFF; /* Green */
-    color: #141211; 
+    background-color: #FFF;
     border: 2px solid #141211;
-}
-
-.form__nilai-img {
-    align-items: center;    
-    width: 90%;
-    float: right;
-    background-color: #FFF;     
-}
-
-.form__result {
-    margin-top: 1rem;
-}
-
-.form__result-warning {
-    background-color: #f5b461;
-    padding: 0.5rem;
-    border-radius: 10px;
-}
-
-.form__result-warning > h1 {
-    font-size: 1.2rem;
-    text-align: center;
+    color: #141211;
 }
