@@ -1,13 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
-use App\Http\Controllers\HitungController;
 use App\Http\Controllers\MahasiswaController;
-
-
-// Route::get('/', [HitungController::class, 'formulir']);
-// Route::post('/hitung', [HitungController::class, 'hitung']);
 
 Route::get('/', [MahasiswaController::class, 'index']);
 Route::get('/tambah', [MahasiswaController::class, 'tambah']);
