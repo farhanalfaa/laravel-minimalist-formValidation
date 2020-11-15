@@ -2,44 +2,29 @@
 
 <div>
 
-    <h3>Data Mahasiswa</h3>
-
-    <a href="/mahasiswa/tambah"> + Tambah Mahasiswa Baru</a>
-
-    <br />
-    <br />
 
     <div class="dashboard">
-        <div class="dashboard__item">
-            <div class="dashboard__item-grade">
 
-            </div>
-            <div class="dashboard__item-name">
+        <h3>Data Mahasiswa</h3>
+        <a class="dashboard__item-link dashboard__add-button" href="/tambah"> Tambah Data</a>
 
-            </div>
-            div.dashboard__item-score
-        </div>
-    </div>
-    <table border="1">
-        <tr>
-            <th>Nama</th>
-            <th>First Score</th>
-            <th>Second Score</th>
-            <th>Final Score</th>
-        </tr>
         @foreach($mahasiswa as $m)
-        <tr>
-            <td>{{ $m->fullName }}</td>
-            <td>{{ $m->firstScore }}</td>
-            <td>{{ $m->secondScore }}</td>
-            <td>{{ $m->finalScore }}</td>
-
-            <td>
-                <a href="/mahasiswa/edit/{{ $m->id }}">Edit</a>
-                |
-                <a href="/mahasiswa/hapus/{{ $m->id }}">Hapus</a>
-            </td>
-        </tr>
+        <div class="dashboard__item">
+            <div class="dashboard__item-content">
+                <div class="dashboard__item-grade">
+                    <p>{{ $m->finalScore }}</p>
+                </div>
+                <div class="dashboard__item-name">
+                    <p>{{ $m->fullName }}</p>
+                </div>
+            </div>
+            <div class="dashboard__item__button">
+                <p class="dashboard__item-score">First Score : <span style="font-weight: bold;">{{ $m->firstScore }}</span></p>
+                <p class="dashboard__item-score">Second Score: <span style="font-weight: bold;">{{ $m->secondScore }}</span></p>
+                <a class="dashboard__item-link dashboard__edit-button" href="/edit/{{ $m->id }}">Edit</a>
+                <a class="dashboard__item-link dashboard__delete-button" href="/hapus/{{ $m->id }}">Hapus</a>
+            </div>
+        </div>
         @endforeach
-    </table>
+    </div>
 </div>

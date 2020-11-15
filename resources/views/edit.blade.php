@@ -8,8 +8,9 @@
             <!-- <a href="/mahasiswa"> Kembali</a> -->
 
             @foreach($mahasiswa as $m)
-            <form action="/mahasiswa/update" method="post" autocomplete="off">
+            <form action="/update" method="post" autocomplete="off">
                 {{ csrf_field() }}
+                <input type="hidden" name="id" value="{{ $m->id }}"> <br />
                 Nama
                 <input class="form__input-field" type="text" required="required" name="fullName" value="{{ $m->fullName }}"> <br />
                 First Score

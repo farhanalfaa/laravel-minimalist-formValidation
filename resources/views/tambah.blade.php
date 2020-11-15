@@ -7,7 +7,7 @@
             <h2 class="form__pages-top">Tambah Data</h2>
             <!-- 
             <a href="/mahasiswa"> Kembali</a> -->
-            <form class="" action="/mahasiswa/store" method="post" autocomplete="off">
+            <form class="" action="/store" method="post" autocomplete="off">
                 {{ csrf_field() }}
                 Full Name
                 <input class="form__input-field" type="text" name="fullName" required="required"> <br />

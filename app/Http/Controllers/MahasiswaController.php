@@ -43,7 +43,7 @@ class MahasiswaController extends Controller
             "finalScore" => $finalScore
         ]);
 
-        return redirect("/mahasiswa");
+        return redirect("/");
     }
 
     public function edit($id)
@@ -75,13 +75,13 @@ class MahasiswaController extends Controller
             "finalScore" => $finalScore
         ]);
 
-        return redirect("/mahasiswa");
+        return redirect("/");
     }
 
     public function hapus($id)
     {
         DB::table("mahasiswa")->where("id", $id)->delete();
 
-        return redirect("/mahasiswa");
+        return redirect("/");
     }
 }

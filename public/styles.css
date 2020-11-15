@@ -3,8 +3,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: #f08a5d;
+    color: #393e46;
+}
+
 .form__pages {
-    background-color: #FE8262;
     display: flex;
     place-items: center;
     height: 100vh;
@@ -61,4 +65,107 @@
     background-color: #FFF;
     border: 2px solid #141211;
     color: #141211;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 16rem;
+}
+
+.dashboard h3 {
+    font-size: 4rem;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.dashboard__item {
+    background-color: #FFF;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard__item-content {
+    display: flex;
+    align-items: center;
+}
+
+.dashboard__item-grade {
+    background-color: #e8e8e8;
+    color: #686D8B;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.dashboard__item-name {
+    margin-left: 1rem;
+}
+
+.dashboard__item-score {
+
+    font-size: 0.8rem; 
+    color: #686d76;   
+    background-color: #e8e8e8;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    margin-left: 0.5rem;
+}
+
+.dashboard__item__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.dashboard__item-link {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 0.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.dashboard__add-button {
+    background-color: #e8e8e8;
+    color: #686D8B;
+    width: 8rem;
+    margin-bottom: 1rem;
+}
+
+.dashboard__add-button:hover {
+    background-color: #686D8B;
+    color: #e8e8e8;
+}
+
+.dashboard__edit-button{
+    background-color: #f5b461;
+    color: #FFF;
+    width: 4rem;
+}
+
+
+
+.dashboard__edit-button:hover{
+    background-color: #f3eac2;
+    color: #222831;
+}
+
+.dashboard__delete-button{
+    background-color: #ec524b;
+    color: #FFF;
+    width: 4rem;
+}
+
+.dashboard__delete-button:hover{
+    background-color: #ffd5cd;
+    color: #222831;
 }
